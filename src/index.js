@@ -12,6 +12,7 @@ const images = [
   // Add more images and captions as needed
 ];
 
+// Serve static files from the 'assets' directory
 app.use("/assets", express.static("assets"));
 
 app.get("/", (req, res) => {
