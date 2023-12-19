@@ -12,6 +12,8 @@ const images = [
   // Add more images and captions as needed
 ];
 
+app.use("/assets", express.static("assets"));
+
 app.get("/", (req, res) => {
   res.send("Hello, this is your API!");
 });
